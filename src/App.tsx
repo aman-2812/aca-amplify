@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Button from "@cloudscape-design/components/button"
 import type { Schema } from "../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
 
@@ -21,7 +20,7 @@ function App() {
   return (
     <main>
       <h1>My todos</h1>
-      <Button onClick={createTodo}>+ new</Button>
+      <button onClick={createTodo}>+ new</button>
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>{todo.content}</li>
